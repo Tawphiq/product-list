@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Product Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>TechStore</h1>
+            </div>
+            <div class="nav-right">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        placeholder="Search products..." 
+                        aria-label="Search products"
+                    >
+                    <span class="material-icons search-icon">search</span>
+                </div>
+                <div class="cart-icon" aria-label="Shopping Cart">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="productGrid" class="product-grid"></div>
+    </main>
+
+    <!-- <div id="cart" role="region" aria-label="Shopping Cart">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <span class="material-icons close-cart">close</span>
+        </div>
+        <div id="cartItems"></div>
+        <div id="cartTotal" class="cart-total">Total: $0.00</div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div> -->
+
+    <div id="cart" role="region" aria-label="Shopping Cart">
+      <div class="cart-header">
+          <h2>Shopping Cart</h2>
+          <span class="material-icons close-cart">close</span>
+      </div>
+      
+      <div id="cartItems"></div>
+      
+      <div class="cart-footer">
+          <div class="cart-total">
+              <span>Total</span>
+              <span id="cartTotal">$0.00</span>
+          </div>
+          <button class="checkout-btn">
+              Proceed to Checkout
+          </button>
+      </div>
+  </div>
+
+    <div id="productModal" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <span class="close-btn" role="button" aria-label="Close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About TechStore</h3>
+                <p>Your one-stop destination for premium tech products. We offer the latest gadgets and accessories with exceptional service.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="material-icons">facebook</i></a>
+                    <a href="#" aria-label="Twitter"><i class="material-icons">twitter</i></a>
+                    <a href="#" aria-label="Instagram"><i class="material-icons">instagram</i></a>
+                    <a href="#" aria-label="YouTube"><i class="material-icons">youtube</i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="material-icons">send</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechStore. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
